@@ -33,6 +33,7 @@ public class Main
                         case 2: // Delete: Done
                         {
                             System.out.println("Please Enter the Name of the Recipe You Want to Delete: ");
+                            input.nextLine(); // Added due to the next input.nextLine catching the enter press.
                             Recipe.deleteRecipe(input.nextLine());
                             Utils.doExit();
                             break;

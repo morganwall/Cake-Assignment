@@ -30,8 +30,8 @@ public class Ingredients
             tempArr = Recipe.recipes.get(currentOrders.get(i)); // Gets the HashMap entity with the key from currentOrders.
             
             int k = -1;
-            for (int j = 1; j < tempArr.size(); j++)
-            {
+            for (int j = 1; j < 7; j++) // Manually setting the size as it was crashing before. Should replace this as it'd have to be manually changed if we ->
+            {                           // -> wanted to parse more elements, which is stupid. Works for now though and what I need it to do :)
                 k++;
                 totalIngredients[k] += Integer.parseInt(tempArr.get(j).toString());
             }
