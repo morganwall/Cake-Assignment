@@ -6,8 +6,8 @@ import static net.mlwall.cake.Utils.input;
 
 public class Order
 {
-    public static HashMap<Integer, ArrayList> orders = new HashMap();
-    public static ArrayList deletedOrder = new ArrayList();
+    public static HashMap<Integer, ArrayList> orders = new HashMap(); // Creates a new HashMap named orders.
+    public static ArrayList deletedOrder = new ArrayList(); // Creates an empty ArrayList called deletedOrder.
     
     public static void newOrder()
     {
